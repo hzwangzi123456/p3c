@@ -51,6 +51,7 @@ import java.awt.event.KeyEvent
  */
 class AliInspectionAction : AnAction() {
 
+
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val analysisUIOptions = ServiceManager.getService(project, AnalysisUIOptions::class.java)!!
